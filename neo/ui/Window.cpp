@@ -1021,13 +1021,20 @@ void idWindow::Transition() {
 		} else {
 			clear = false;
 			if (data->data) {
-				if (v4) {
+                if (v4) {
+                    *v4 = data->interp.GetEndValue();
+                } else if ( val ) {
+                    *val = data->interp.GetEndValue()[0];
+                } else {
+                    *r = data->interp.GetEndValue();
+                }
+				/*if (v4) {
 					*v4 = data->interp.GetCurrentValue( gui->GetTime() );
 				} else if ( val ) {
 					*val = data->interp.GetCurrentValue( gui->GetTime() )[0];
 				} else {
 					*r = data->interp.GetCurrentValue( gui->GetTime() );
-				}
+				}*/
 			} else {
 				common->Warning("Invalid transitional data for window %s in gui %s", GetName(), gui->GetSourceFile());
 			}

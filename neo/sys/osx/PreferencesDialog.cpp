@@ -648,9 +648,9 @@ static pascal OSStatus PrefHandler( EventHandlerCallRef inHandler, EventRef inEv
 
 		case kCmdChooseMonitors:
 		{
-			PickMonitor((DisplayIDType*)&prefInfo->prefDisplayID, prefInfo->window);
+			//PickMonitor((DisplayIDType*)&prefInfo->prefDisplayID, prefInfo->window);
 			// Adjust resolutions, refresh rates for potentially new display ID
-			AdjustDisplayControls(prefInfo);
+			//AdjustDisplayControls(prefInfo);
 			break;
 		}
 
@@ -763,7 +763,7 @@ OSStatus CreateGameDisplayPreferencesDialog(const GameDisplayInfo *inGDInfo,
 	
 	// Disable the "choose monitor" button if we've only got one to pick from
 	
-	prefInfo.multiMonitor = CanUserPickMonitor();
+	prefInfo.multiMonitor = false;//CanUserPickMonitor();
 	
 	if (!prefInfo.multiMonitor)
 	{

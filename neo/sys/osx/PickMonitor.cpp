@@ -25,7 +25,7 @@ If you have questions concerning this license or the applicable additional terms
 
 ===========================================================================
 */
-
+#if 0
 #include "../../idlib/precompiled.h"
 #include <Carbon/Carbon.h>
 #include "PickMonitor.h"
@@ -538,3 +538,4 @@ OSStatus PickMonitor (DisplayIDType *inOutDisplayID, WindowRef parentWindow)
 
 }
 
+#endif
