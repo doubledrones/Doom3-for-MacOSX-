@@ -1,0 +1,9 @@
+This is a release that will should actually compile in one click with XCode 4.
+
+After building you will need to 
+ - copy game.dylib to /usr/local/lib (or create a symbolic link). 
+ -add the base folder containing the game assets.
+
+Happy hacking :) !
+
+Fabien
