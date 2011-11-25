@@ -1,12 +1,13 @@
-This is a release that will compile in "one click" on Mac OS X Intel with XCode 4.
+This is a fork of fabiensanglard's Doom 3 for Mac OS X ...fork :-P
 
-After building you will need to:
- 
- - copy game.dylib to /usr/local/lib (or create a symbolic link). 
- - add the base folder containing the game assets.
+It is modified to build properly under the latest Xcode and Mac OS X 10.7 SDK.
 
-For more informations, check http://fabiensanglard.net/doom3_macosx/index.php
+Currently there are some bugs (UI transition has been disabled because of a
+linking issue with the templates - shouldn't be hard to fix, i just need some
+time - and fullscreen modes are not support - again not hard, but...), but the
+game is fully playable and performs fine under a late 2009 iMac with 9400M in
+1024x768 with Ultra quality mode (it just takes a bit to load the textures, so
+High or Medium quality should be better to avoid pauses).
 
-Happy hacking :) !
+Kostas "Bad Sector" Michalopoulos
 
-Fabien
